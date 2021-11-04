@@ -1,0 +1,16 @@
+{
+  "name": "tkbnk",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "application",
+    "packages/**"
+  ],
+  "scripts": {
+    "start": "yarn workspace application start",
+    "start:core": "VITE_APP_CORE=true yarn workspace core start",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  }
+}
